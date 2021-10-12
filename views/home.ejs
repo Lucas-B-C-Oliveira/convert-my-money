@@ -1,9 +1,9 @@
 <%- include('header') %>
-<h1>
-  <form method='GET' action="/cotacao">
-    <input name='cotacao' placeholder="Cotação do Dólar"><br>
-    <input name='quantidade' placeholder="Quantidade de Dólares"><br>
-    <button>Converter!</button>
-  </form>
-</h1>
-<%- include('footer') %>
+  <h1>
+    <form method='GET' action="/cotacao">
+      <input name='cotacao' placeholder="Cotação do Dólar" value="<%= cotacao %>"><br>
+      <input name='quantidade' placeholder="Quantidade de Dólares"><br>
+      <button>Converter!</button>
+    </form>
+  </h1>
+  <%- include('footer') %>
